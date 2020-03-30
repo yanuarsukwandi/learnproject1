@@ -103,7 +103,13 @@ export class User extends Component {
           <div className="badge badge-dark">Public Repos : {public_repos}</div>
           <div className="badge badge-light">Public Gists : {public_gists}</div>
         </div>
-        <Repos repos={repos} />
+        <div className="card">
+          <h3>
+            <i className="fas fa-star"> </i> Repositories
+          </h3>
+
+          <Repos repos={repos} />
+        </div>
       </Fragment>
     );
   }
