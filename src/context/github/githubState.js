@@ -1,0 +1,20 @@
+import React, { useReducer } from "react";
+import axios from "axios";
+import GithubContext from "./githubContext";
+import GithubReducer from "./githubReducer";
+import {
+  SEARCH_USERS,
+  GET_USER,
+  GET_REPOS,
+  SET_LOADING,
+  CLEAR_USERS
+} from "../types";
+
+// const GithubState = props = {
+//     const initialState = {
+//         users: [],
+//         user: {},
+//         repos: [],
+//         loading: false
+//     }
+// }
