@@ -5,7 +5,7 @@ import {
   SET_LOADING,
   CLEAR_USERS
 } from "../types";
-import { act } from "react-dom/test-utils";
+//import { act } from "react-dom/test-utils";
 
 export default (state, action) => {
   switch (action.type) {
@@ -25,6 +25,12 @@ export default (state, action) => {
       return {
         ...state,
         users: [],
+        loading: false
+      };
+    case GET_REPOS:
+      return {
+        ...state,
+        repos: action.payload,
         loading: false
       };
     case SET_LOADING:
